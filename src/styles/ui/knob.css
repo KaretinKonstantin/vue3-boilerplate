@@ -1,0 +1,9 @@
+.p-knob svg {
+  /* transform: scale(0.5); */
+  outline: none;
+}
+
+.p-knob-text {
+  font-size: 28px;
+  font-weight: 600;
+}

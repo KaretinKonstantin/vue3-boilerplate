@@ -1,0 +1,5 @@
+.p-tab {
+  padding: 0 28px 8px;
+  font-weight: 700;
+  @apply text-xl;
+}

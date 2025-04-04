@@ -1,0 +1,270 @@
+.dashboard-calendar-group--three-months,
+.dashboard-calendar-group--twenty-months {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.dashboard-calendar-group--day {
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  gap: 20px;
+}
+
+.dashboard-calendar-group .p-datepicker-header {
+  display: none;
+}
+
+.dashboard-calendar-group .p-calendar {
+  width: 100%;
+  border: none;
+  box-shadow: none;
+}
+
+/* Calendar body */
+
+.dashboard-calendar {
+  padding: 20px;
+  border: 1px solid var(--gray-4);
+  border-radius: var(--border-small);
+}
+
+.dashboard-calendar h3 {
+  margin-bottom: 10px;
+}
+
+.dashboard-calendar .p-datepicker-inline {
+  min-width: 0;
+  width: 100%;
+  padding: 0;
+  border: none;
+  box-shadow: none;
+}
+
+.dashboard-calendar .p-datepicker-calendar {
+  margin: 0;
+}
+
+.dashboard-calendar table {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.dashboard-calendar tbody {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.dashboard-calendar tr {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 6px;
+}
+
+.dashboard-calendar th {
+  padding: 0;
+  color: var(--black);
+  font-family: 16px;
+  font-weight: 500;
+  line-height: 22px;
+}
+
+.dashboard-calendar td {
+  width: auto;
+  height: auto;
+  padding: 0;
+}
+
+.dashboard-calendar td > span {
+  width: auto;
+  height: auto;
+  border: none;
+  border-radius: 0;
+}
+
+.dashboard-calendar td > span:focus {
+  box-shadow: none;
+  outline: 3px solid var(--blue-2);
+  border-radius: var(--border-small);
+}
+
+.dashboard-calendar .p-highlight {
+  background-color: transparent !important;
+  border: none;
+}
+
+/* Calendar day & events */
+
+.dashboard-calendar__day {
+  position: relative;
+  width: 100%;
+  height: 62px;
+  padding: 10px;
+  color: var(--black);
+  text-align: center;
+  vertical-align: middle;
+  background-color: var(--gray-1);
+  border-radius: var(--border-small);
+}
+
+.dashboard-calendar .p-datepicker-calendar > tbody > tr > td > span:hover {
+  background-color: transparent;
+}
+
+.dashboard-calendar .p-datepicker-other-month .dashboard-calendar__day {
+  color: var(--gray-5);
+  background-color: #f9f9f9;
+}
+
+.dashboard-calendar .p-datepicker-other-month .dashboard-calendar__events {
+  display: none;
+}
+
+.dashboard-calendar .p-datepicker-today .dashboard-calendar__day {
+  border: 2px solid var(--yellow);
+}
+
+.dashboard-calendar__events {
+  position: absolute;
+  left: 50%;
+  bottom: 6px;
+  transform: translateX(-50%);
+  display: flex;
+  max-width: 85%;
+  height: 10px;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.dashboard-calendar-group--twenty-months .dashboard-calendar__events {
+  bottom: 4px;
+}
+
+.dashboard-calendar__event {
+  display: block;
+  width: 15px;
+  height: 100%;
+}
+
+.dashboard-calendar__event--certificate-end {
+  background-color: var(--violet);
+}
+
+.dashboard-calendar__event--learning-start {
+  background-color: var(--green-1);
+}
+
+.dashboard-calendar__event--learning-end {
+  background-color: var(--red);
+}
+
+.dashboard-calendar__event--subscription-end {
+  background-color: var(--yellow);
+}
+
+.dashboard-calendar__event--user-event {
+  background-color: var(--blue-2);
+}
+
+/* Event groups */
+
+.dashboard-calendar-group .event-group {
+  padding: 20px;
+  min-height: 200px;
+  border: 1px solid var(--gray-4);
+  border-radius: var(--border-large);
+  transition: all 300ms;
+}
+
+.dashboard-calendar-group .event-group__title {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.dashboard-calendar-group .event-group__color {
+  display: block;
+  width: 10px;
+  min-width: 10px;
+  height: 10px;
+  min-height: 10px;
+  border-radius: 50%;
+}
+
+.dashboard-calendar-group .event-group__title-text {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 24px;
+}
+
+.dashboard-calendar-group .event-group__list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  overflow: hidden;
+  transition: all 500ms linear;
+}
+
+.dashboard-calendar-group .event-group__list--hidden {
+  max-height: 0 !important;
+}
+
+.dashboard-calendar-group .event-group__item {
+  font-size: 16px;
+  line-height: 22px;
+  cursor: pointer;
+}
+
+/* .dashboard-calendar-group .event-group__item span {
+  min-width: 0;
+  overflow: hidden;
+  text-wrap: nowrap;
+  text-overflow: ellipsis;
+} */
+
+.dashboard-calendar-group .event-group__item:hover {
+  color: var(--black);
+}
+
+.dashboard-calendar-group .event-group__button {
+  margin-top: 20px;
+  font-size: 14px;
+  line-height: 20px;
+  text-decoration: underline;
+}
+
+/* Calendar controls */
+
+.dashboard-calendar__controls {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.dashboard-calendar-group__topbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+  margin-bottom: 20px;
+}
+
+.dashboard-calendar-group__controls {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.dashboard-calendar-group__control-value {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 24px;
+}
+
+.dashboard-calendar-group__control-buttons {
+  display: flex;
+  gap: 10px;
+}

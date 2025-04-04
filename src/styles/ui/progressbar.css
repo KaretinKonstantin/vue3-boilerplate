@@ -1,0 +1,9 @@
+.p-progressbar .p-progressbar-value {
+  background: var(--yellow);
+}
+
+.p-progressbar {
+  height: 12px;
+  border-radius: 4px;
+  background: var(--violet);
+}

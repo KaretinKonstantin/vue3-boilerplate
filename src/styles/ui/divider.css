@@ -1,0 +1,9 @@
+.p-divider {
+  margin: 0;
+  padding: 0;
+  border-color: var(--beige-2);
+}
+
+.p-divider.p-divider-horizontal:before {
+  border-top: 2px solid #e5e7eb;
+}

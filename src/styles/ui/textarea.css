@@ -1,0 +1,22 @@
+.p-inputtextarea {
+  position: relative;
+  padding: 10px 16px;
+  background-color: var(--gray-1);
+  border-color: transparent;
+}
+
+.p-inputtextarea.outlined {
+  border-color: var(--violet);
+}
+
+.p-inputtextarea:hover {
+  background-color: var(--gray-2);
+}
+
+.p-inputtextarea.p-invalid {
+  border-color: var(--red);
+}
+
+.p-inputtextarea:disabled {
+  background-color: var(--gray-1);
+}

@@ -1,0 +1,63 @@
+@import './ui/_index.css';
+@import './fonts.css';
+@plugin '@iconify/tailwind4';
+@import './tailwind.css';
+
+:root {
+  --transition-200ms: all 200ms ease-in-out;
+}
+
+*,
+::before,
+::after {
+  box-sizing: border-box;
+}
+
+.app {
+  width: 100vw;
+}
+
+.app > .wrapper {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+}
+
+body,
+html {
+  font-family: 'PT Root UI', sans-serif;
+  display: flex;
+  width: 100%;
+  min-height: 100vh;
+  scroll-behavior: smooth;
+}
+
+main {
+  padding: 20px 20px 20px 0;
+  overflow-y: hidden;
+}
+
+main:has(.sticky-slide) {
+  overflow-y: initial;
+}
+
+aside {
+  overflow: hidden;
+  border-radius: 8px;
+}
+
+.p-floatlabel .p-placeholder,
+.p-floatlabel input::placeholder,
+.p-floatlabel .p-inputtext::placeholder {
+  opacity: 0 !important;
+  transition-property: all !important;
+  transition-timing-function: ease !important;
+}
+
+.p-floatlabel .p-focus .p-placeholder,
+.p-floatlabel input:focus::placeholder,
+.p-floatlabel .p-inputtext:focus::placeholder {
+  opacity: 1 !important;
+  transition-property: all !important;
+  transition-timing-function: ease !important;
+}

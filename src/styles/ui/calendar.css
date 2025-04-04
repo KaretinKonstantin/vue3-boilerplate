@@ -1,0 +1,51 @@
+
+.p-calendar {
+  color: var(--gray-7);
+  background-color: var(--gray-1);
+  border: 1px solid transparent;
+  border-radius: var(--border-small);
+}
+
+.p-calendar .p-inputtext {
+  background-color: transparent;
+}
+
+.p-calendar .p-inputtext:enabled:focus {
+  border-color: transparent;
+}
+
+.p-calendar .p-button {
+  padding: 10px 16px;
+  color: var(--gray-7);
+  background-color: transparent;
+  border-color: transparent;
+}
+
+.p-calendar.p-invalid {
+  border-color: var(--red);
+}
+
+.p-calendar.p-focus {
+  color: var(--black);
+  border-color: var(--black);
+}
+
+.p-calendar.p-focus .p-inputtext {
+  color: var(--black);
+  box-shadow: none;
+}
+
+.p-datepicker table td > span.p-highlight {
+  color: var(--violet);
+  background-color: var(--yellow);
+}
+
+.p-datepicker-calendar td > span:hover {
+  background-color: var(--gray-2);
+}
+
+.p-datepicker-today > span {
+  color: var(--violet);
+  background-color: transparent;
+  border: 2px solid var(--violet);
+}

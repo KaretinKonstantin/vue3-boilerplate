@@ -1,0 +1,51 @@
+.p-radiobutton {
+  width: 20px;
+  height: 20px;
+}
+
+.p-radiobutton-input {
+  width: 100%;
+  height: 100%;
+}
+
+.p-radiobutton-box {
+  width: 100%;
+  height: 100%;
+  background-color: transparent;
+  border-color: var(--gray-4);
+}
+
+.p-radiobutton.p-highlight .p-radiobutton-box {
+  background-color: transparent;
+  border-color: var(--black);
+}
+
+.p-radiobutton.p-highlight .p-radiobutton-icon {
+  width: 10px;
+  height: 10px;
+  background-color: var(--black);
+}
+
+.p-radiobutton.p-invalid .p-radiobutton-box {
+  border-color: var(--red);
+}
+
+.p-radiobutton.p-invalid .p-radiobutton-icon {
+  background-color: var(--red);
+}
+
+.p-radiobutton.correct .p-radiobutton-box {
+  border-color: var(--green);
+}
+
+.p-radiobutton.correct .p-radiobutton-icon {
+  background-color: var(--green);
+}
+
+.p-radiobutton.p-disabled .p-radiobutton-box {
+  border-color: var(--gray-4);
+}
+
+.p-radiobutton.p-disabled .p-radiobutton-icon {
+  background-color: var(--gray-4);
+}

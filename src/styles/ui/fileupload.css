@@ -1,0 +1,15 @@
+.p-fileupload {
+  cursor: pointer;
+}
+
+.p-fileupload .p-fileupload-buttonbar {
+  padding: 0;
+  background: none;
+  border: none;
+}
+
+.p-fileupload .p-fileupload-content {
+  padding: 0;
+  background: none;
+  border: none;
+}

@@ -1,0 +1,80 @@
+.p-paginator {
+  display: flex;
+  column-gap: 10px;
+  justify-content: center;
+  padding: 20px;
+  border-radius: 0;
+  background-color: transparent;
+}
+
+.p-paginator .p-paginator-first,
+.p-paginator .p-paginator-prev,
+.p-paginator .p-paginator-next,
+.p-paginator .p-paginator-last {
+  color: var(--violet);
+}
+
+.p-datatable .p-paginator-bottom {
+  margin-top: 24px;
+  border: none;
+}
+
+.p-paginator .p-paginator-pages {
+  display: flex;
+  column-gap: 10px;
+}
+
+.p-paginator .p-paginator-pages .p-paginator-page {
+  padding: 10px 14px;
+  color: var(--violet);
+  background-color: var(--color-white);
+  border: 1px solid var(--violet);
+  border-radius: var(--border-small);
+}
+
+.p-paginator .p-paginator-pages .p-paginator-page.p-highlight {
+  padding: 10px 14px;
+  border-radius: 6px;
+  color: var(--color-white);
+  background: var(--violet);
+}
+
+.p-paginator-prev,
+.p-paginator-next {
+  color: var(--violet);
+  background-color: var(--color-white);
+  border: 1px solid var(--violet);
+  border-radius: var(--border-small);
+}
+
+.p-paginator-prev.p-disabled,
+.p-paginator-next.p-disabled {
+  color: var(--gray-4);
+  border-color: var(--gray-4);
+}
+
+.p-paginator-right-content {
+  margin-left: 10px;
+  font-size: 14px;
+  color: var(--black);
+}
+
+.p-paginator-left-content {
+  margin-right: 10px;
+  font-size: 14px;
+  color: var(--black);
+}
+
+.p-paginator-left-content button {
+  color: var(--gray-4);
+}
+
+.p-paginator-left-content button.active {
+  color: var(--violet);
+  font-weight: 700;
+}
+
+.p-paginator-first,
+.p-paginator-last {
+  display: none;
+}

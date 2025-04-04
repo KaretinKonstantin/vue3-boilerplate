@@ -1,0 +1,54 @@
+.p-dialog {
+  width: 600px;
+  padding: 30px;
+  background-color: var(--color-white);
+  border-radius: 6px;
+  box-shadow: none;
+}
+
+.p-dialog.full-screen {
+  width: 100vw !important;
+  height: 100vh !important;
+  max-height: 100%;
+}
+
+.p-dialog-header {
+  padding: 0;
+  margin-bottom: 16px;
+  font-size: 30px;
+  line-height: 37px;
+  color: var(---violet);
+}
+
+.p-dialog-content {
+  padding: 0;
+  margin-bottom: 24px;
+  font-size: 18px;
+  line-height: 21px;
+  color: var(--black);
+  overflow: hidden;
+}
+
+.simple-dialog .p-dialog-content {
+  margin: 0;
+}
+
+.p-dialog-footer {
+  justify-content: flex-start;
+  padding: 0;
+}
+
+.p-confirm-dialog-reject {
+  color: var(--violet);
+  background-color: transparent;
+  border: 1px solid var(--violet);
+}
+
+.p-confirm-dialog-reject:hover {
+  color: var(--color-white);
+  border: 1px solid var(--violet);
+}
+
+.p-overlaypanel-content {
+  padding: 10px;
+}

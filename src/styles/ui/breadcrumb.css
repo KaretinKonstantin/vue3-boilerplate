@@ -1,0 +1,31 @@
+.p-breadcrumb {
+  margin-bottom: 6px;
+  padding: 30px 20px 0 !important;
+  font-size: 12px;
+  background: none !important;
+  border: none !important;
+  border-radius: 0 !important;
+}
+
+.p-breadcrumb .p-menuitem {
+  color: var(--violet-2);
+}
+
+.p-breadcrumb .p-menuitem:hover {
+  color: var(--violet);
+  text-decoration: underline;
+}
+
+.p-breadcrumb .p-menuitem:last-child {
+  color: var(--black);
+  text-decoration: none !important;
+  cursor: default !important;
+}
+
+.p-breadcrumb .p-menuitem-separator span {
+  display: block;
+  width: 5px;
+  height: 5px;
+  background-color: var(--gray-7);
+  border-radius: 50%;
+}

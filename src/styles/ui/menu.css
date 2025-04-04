@@ -1,0 +1,69 @@
+.p-menu {
+  color: var(--black);
+  background-color: var(--color-white);
+}
+
+.p-menu
+  .p-menuitem:not(.p-highlight):not(.p-disabled)
+  > .p-menuitem-content:hover {
+  background: var(--gray-2);
+  cursor: pointer;
+}
+
+.p-menuitem-link {
+  color: var(--gray-7);
+  transition: all 0.3s linear;
+}
+
+.p-menuitem-link:hover {
+  color: var(--black);
+}
+
+.p-menuitem .active {
+  color: var(--blue);
+}
+
+.p-menu .p-menuitem > .p-menuitem-content .p-menuitem-link .p-menuitem-icon {
+  color: inherit;
+}
+
+.p-menu .p-menuitem > .p-menuitem-content .p-menuitem-link .p-menuitem-text {
+  color: inherit;
+}
+
+.p-menu-overlay {
+  overflow: auto;
+  max-height: 300px;
+}
+
+.editor-menu ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  width: 200px;
+  padding: 5px 15px;
+}
+
+.editor-menu .p-menuitem-content {
+  color: inherit;
+}
+
+.editor-menu .p-menuitem-link {
+  display: block;
+  width: 20px;
+  height: 20px;
+  padding: 0;
+  background-color: currentColor;
+  color: inherit !important;
+  border: 1px solid var(--gray-2);
+  border-radius: 4px;
+}
+
+.editor-menu .p-menuitem-text {
+  color: inherit;
+}
+
+.p-menuitem-icon {
+  width: 20px !important;
+  height: 20px !important;
+}

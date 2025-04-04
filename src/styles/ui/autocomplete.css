@@ -1,0 +1,68 @@
+.p-autocomplete {
+  background-color: var(--gray-1);
+  border: 1px solid transparent;
+  border-radius: var(--border-small);
+  transition: var(--transition-200ms);
+}
+
+.p-autocomplete:hover {
+  background-color: var(--gray-2);
+}
+
+.p-autocomplete .p-button {
+  padding: 11px 16px;
+  color: var(--black);
+  background-color: transparent;
+  border: none;
+}
+
+.p-autocomplete .p-button svg {
+  width: 20px;
+  height: 20px;
+  transition: var(--transition-200ms);
+}
+
+.p-autocomplete .p-inputtext {
+  width: 100%;
+  color: var(--gray-7);
+  background-color: transparent;
+}
+
+.p-autocomplete.p-focus {
+  border-color: var(--black);
+}
+
+.p-autocomplete.p-focus .p-inputtext:enabled:focus {
+  color: var(--black);
+  border-color: transparent;
+}
+
+.p-autocomplete.p-disabled {
+  pointer-events: auto;
+  cursor: not-allowed;
+}
+
+.p-autocomplete.p-disabled .p-inputtext {
+  background-color: var(--gray-1);
+}
+
+.p-autocomplete.p-invalid .p-inputtext {
+  border-color: var(--red);
+}
+
+.p-autocomplete.p-overlay-open .p-button svg {
+  transform: rotate(180deg);
+}
+
+.p-autocomplete-panel {
+  border: 1px solid var(--gray-7);
+  border-radius: var(--border-small);
+}
+
+.p-autocomplete-items {
+  padding: 0;
+}
+
+.p-autocomplete-item {
+  padding: 10px;
+}

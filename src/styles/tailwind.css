@@ -1,0 +1,67 @@
+@import 'tailwindcss';
+@import 'tailwindcss-primeui';
+
+@theme {
+  /* Colors */
+  --color-orange-primary: #ee6b0c;
+  --color-orange-light: #f6944d;
+  --color-orange-1: #f6944d;
+  --color-orange-2: #f6944d;
+  --color-orange-3: #f6944d;
+  --color-orange-4: #f6944d;
+  --color-orange-5: #f6944d;
+
+  --color-emerald-primary: #13454b;
+  --color-emerald-1: #f1fafc;
+  --color-emerald-2: #e3f5f9;
+  --color-emerald-3: #d5f0f6;
+  --color-emerald-4: #2996a3;
+  --color-emerald-5: #1f707a;
+
+  --color-gray-primary: #b3b3b3;
+  --color-gray-1: #f6f6f6;
+  --color-gray-2: #eee;
+  --color-gray-3: #e6e6e6;
+  --color-gray-4: #d4d4d4;
+  --color-gray-5: #999;
+  --color-gray-6: #5e5e5e;
+  --color-gray-7: #222;
+
+  --color-accent-red: ##ff5252;
+  --color-light-red: #ffebee;
+
+  --color-accent-green: #4caf50;
+  --color-light-green: #e0fae1;
+
+  --color-dark-purple: #6d379e;
+  --color-light-purple: #ede7f6;
+
+  --color-white: #fff;
+
+  /* Typography */
+  --font-display: 'PT Root UI', 'sans-serif';
+
+  --text-xs: 12px;
+  --text-xs--line-height: 12px;
+
+  --text-sm: 12px;
+  --text-sm--line-height: 20px;
+
+  --text-md: 14px;
+  --text-md--line-height: 20px;
+
+  --text-base: 14px;
+  --text-base--line-height: 22px;
+
+  --text-lg: 16px;
+  --text-lg--line-height: 24px;
+
+  --text-xl: 20px;
+  --text-xl--line-height: 32px;
+
+  --text-2xl: 22px;
+  --text-xs--line-height: 32px;
+
+  --text-3xl: 24px;
+  --text-xs--line-height: 32px;
+}

@@ -1,0 +1,19 @@
+.p-overlaypanel {
+  min-width: 300px;
+  border: 1px solid var(--gray-2);
+  border-radius: var(--border-large);
+  box-shadow: none;
+  overflow: hidden;
+}
+
+.p-overlaypanel.notification-panel,
+.p-overlaypanel.legal-change-panel,
+.p-overlaypanel.more-items-panel {
+  margin-top: 5px !important;
+  display: initial !important;
+  position: fixed !important;
+}
+
+.p-overlaypanel-content {
+  padding: 0;
+}

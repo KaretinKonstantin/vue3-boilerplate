@@ -1,0 +1,17 @@
+.p-chips-multiple-container {
+  gap: 8px;
+  width: 100%;
+}
+
+[id^="chips_chips_item"] {
+  max-width:fit-content;
+  overflow-wrap: anywhere;
+
+  svg {
+    min-width: 14px;
+  }
+}
+
+.p-chips-token {
+  margin: 0;
+}

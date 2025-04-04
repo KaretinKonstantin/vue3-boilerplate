@@ -1,0 +1,75 @@
+@import './accordeon.css';
+@import './autocomplete.css';
+@import './animations.css';
+@import './breadcrumb.css';
+@import './button.css';
+@import './calendar.css';
+@import './checkbox.css';
+@import './chips.css';
+@import './dashboard.css';
+@import './divider.css';
+@import './dropdown.css';
+@import './dialog.css';
+@import './fileupload.css';
+@import './input.css';
+@import './knob.css';
+@import './label.css';
+@import './link.css';
+@import './menu.css';
+@import './multiselect.css';
+@import './overlaypanel.css';
+@import './paginator.css';
+@import './radio.css';
+@import './sidebar.css';
+@import './selectbutton.css';
+@import './speeddial.css';
+@import './textarea.css';
+@import './tab.css';
+@import './table.css';
+@import './tooltip.css';
+@import './progressbar.css';
+
+.p-component {
+  font-family: inherit;
+}
+
+.p-toast-message-content {
+  border-width: 0 !important;
+}
+
+.card {
+  background-color: white;
+  border-radius: 8px;
+  color: var(--black);
+}
+
+i {
+  min-width: 24px;
+  min-height: 24px;
+  font-size: 24px;
+}
+
+.p-tieredmenu {
+  width: auto;
+}
+
+.p-tieredmenu .p-menuitem-icon {
+  width: 24px;
+  height: 24px;
+}
+
+.p-float-label > .p-invalid + label {
+  color: inherit;
+}
+
+.p-dialog-header {
+  padding: 0 4px;
+}
+
+.p-dialog-footer {
+  padding: 0 4px;
+}
+
+.p-dialog-content {
+  padding: 0 4px;
+}

@@ -1,0 +1,17 @@
+.p-sidebar {
+  position: relative;
+  width: 500px;
+  padding: 30px 20px;
+}
+
+.p-sidebar-header {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  padding: 0;
+  width: calc(100% - 40px);
+}
+
+.p-sidebar.content .p-sidebar-content {
+  padding: 40px 0 0 0;
+}
